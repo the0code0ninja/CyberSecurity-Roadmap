@@ -20,7 +20,7 @@ Welcome to my hands-on Cybersecurity Knowledge Base and Lab Notes! This reposito
 ### 🔍 01. Information Gathering (RECONNAISSANCE)
 - [x] Passive Reconnaissance
 - [x] Identifying Our Target & Scope
-- [x] Discovering Email Addresses (`https://behindtheemail.com/`)
+- [x] Discovering Email Addresses (`behindtheemail`)
 - [x] Gathering Breached Credentials with `DeHashed`
 - [x] Hunting Subdomains (`subdomain-finder`)
 - [x] Identifying Website Technologies (`Wappalyzer`, `Netcraft`)
