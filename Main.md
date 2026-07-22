@@ -17,7 +17,7 @@ Welcome to my hands-on Cybersecurity Knowledge Base and Lab Notes! This reposito
 
 *(Note: Ticking `[x]` indicates lab completion and writeup upload.)*
 
-### 🔍 01. Information Gathering (RECONNAISSANCE)
+### 🔍 01. RECONNAISSANCE
 - [x] Passive Reconnaissance
 - [x] Identifying Our Target & Scope
 - [x] Discovering Email Addresses (`behindtheemail`)
