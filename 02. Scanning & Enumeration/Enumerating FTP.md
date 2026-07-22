@@ -16,7 +16,9 @@ Running the default scripts, so we can get something... .. .
 
 ### 2) Getting connected via FTP 
 The command is `ftp <target_ip>` 
+
 <img width="302" height="169" alt="image" src="https://github.com/user-attachments/assets/bf4865ed-27ee-4818-bb66-4b73fe3173b9" />
+
 And now, i got connected to my target IP, and can get any file whichever i wanted .
 
 ### For `Metasploit Framework` Part, you can check to [Metasploit Framework](#)
