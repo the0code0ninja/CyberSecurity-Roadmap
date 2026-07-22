@@ -96,3 +96,14 @@ We use this, to get some sensitive information of a website, that is been remove
 Resoruce:- ```https://archive.org/```
 <img width="1528" height="751" alt="image" src="https://github.com/user-attachments/assets/e92c2128-ab25-4ac1-a581-9564d3268b2f" />
 
+
+# ``` BONUS ``` 
+=============================================================================================================
+1) Getting Info related to email adddress
+   Resource: -```https://behindtheemail.com/```
+   <img width="1523" height="766" alt="image" src="https://github.com/user-attachments/assets/8f4895c8-ce72-44e8-a8ef-fd4a9d816ebc" />
+   Resource 2:- ```https://dehashed.com/search#breachCheck```
+   This is for gathering breached credentials.
+   <img width="1527" height="662" alt="image" src="https://github.com/user-attachments/assets/0a4ac8bd-ec19-4136-beb1-7113ae99416b" />
+
+
