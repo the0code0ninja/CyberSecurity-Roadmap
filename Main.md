@@ -18,14 +18,14 @@ Welcome to my hands-on Cybersecurity Knowledge Base and Lab Notes! This reposito
 *(Note: Ticking `[x]` indicates lab completion and writeup upload.)*
 
 ### 🔍 01. Information Gathering (RECONNAISSANCE)
-- [ ] Passive Reconnaissance
-- [ ] Identifying Our Target & Scope
+- [x] Passive Reconnaissance
+- [x] Identifying Our Target & Scope
 - [ ] Discovering Email Addresses (`theHarvester`, `Hunter.io`)
 - [ ] Gathering Breached Credentials with `DeHashed`
-- [ ] Hunting Subdomains (`Amass`, `Assetfinder`)
-- [ ] Identifying Website Technologies (`Wappalyzer`, `BuiltWith`)
-- [ ] Google Fu (Advanced Search Operators)
-- [ ] Utilizing Social Media & OSINT Fundamentals
+- [x] Hunting Subdomains (`Amass`, `Assetfinder`)
+- [x] Identifying Website Technologies (`Wappalyzer`, `BuiltWith`)
+- [x] Google Fu (Advanced Search Operators)
+- [x] Utilizing Social Media & OSINT Fundamentals
 
 ---
 
