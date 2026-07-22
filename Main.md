@@ -30,7 +30,7 @@ Welcome to my hands-on Cybersecurity Knowledge Base and Lab Notes! This reposito
 ---
 
 ### 📡 02. Scanning & Enumeration
-- [ ] Network Scanning with `Nmap` (NSE Scripts & Port Auditing)
+- [x] Network Scanning with `Nmap` (NSE Scripts & Port Auditing)
 - [ ] Enumerating FTP (Port 21)
 - [ ] Enumerating SNMP (Port 161/162)
 - [ ] Enumerating HTTP and HTTPS (Port 80/443)
