@@ -54,11 +54,15 @@ We can see this, by using the extensions ‘Netcraft’, ‘Wappalyzer’.
 
 We can get the subdomains by using website ‘sub-domain finder’.
 Resource:- ```https://subdomainfinder.c99.nl/```
+<img width="1523" height="765" alt="image" src="https://github.com/user-attachments/assets/53319f94-b1b6-4a75-b468-97919d0f3902" />
+
 
 3) Find all the URLs of website
 
 We can get all the links of target by just simply copying the url of target and paste it into website 'Link-extractor'
 Resource: -```https://www.firecrawl.dev/tools/url-extractor```
+<img width="1191" height="728" alt="image" src="https://github.com/user-attachments/assets/bc3de393-b05e-404d-8375-96962f77232e" />
+
 
 4) Finding the buffer size of website
 
@@ -72,11 +76,15 @@ command:- ```Ping -f -l any_size target_url```
 
 ‘SSLabs.com’ in this website, paste the target url and then click on ‘test your server’.
 Resource:- ```https://www.ssllabs.com/ssltest/```
+<img width="1517" height="753" alt="image" src="https://github.com/user-attachments/assets/ab595f17-e12f-461c-b088-3f61168a7eb0" />
+
 
   6) Find how security headers of a target is deployed.
 
 We can get this on ‘Security headers.com’
 Resource:-  ````https://securityheaders.com/````
+<img width="1524" height="726" alt="image" src="https://github.com/user-attachments/assets/4fe799f9-344e-45b9-b388-e67c9f2f78b1" />
+
 
  7) Using ‘WayBack Machine’ the check previous view of target url’
 
@@ -86,3 +94,5 @@ This is used to see how a particular website looks before 3-5 yrs ago.
 
 We use this, to get some sensitive information of a website, that is been removed after sometime, and not present in today's interface.
 Resoruce:- ```https://archive.org/```
+<img width="1528" height="751" alt="image" src="https://github.com/user-attachments/assets/e92c2128-ab25-4ac1-a581-9564d3268b2f" />
+
