@@ -89,7 +89,8 @@ Represent two primary types of entities:
 
 **Organizational Units (OUs)** are logical container objects used to organize and classify users and machines.
 
-![ADUC OUs Structure](images/aduc_ous_structure.png)
+<img width="751" height="535" alt="image" src="https://github.com/user-attachments/assets/6ae7a232-f026-4bc3-9867-c7f38b91e7c6" />
+
 
 ### Built-in Default Containers:
 - **Builtin:** Default groups available to any Windows host.
@@ -105,32 +106,33 @@ Represent two primary types of entities:
 ### Managing OUs & Accidental Deletion Protection
 By default, OUs are protected from accidental deletion in Active Directory.
 
-![Accidental Deletion Error](images/accidental_deletion_error.png)
+<img width="289" height="113" alt="image" src="https://github.com/user-attachments/assets/ccc6fc80-493a-4f47-ac8f-5a10d6de4a44" />
 
 #### To Delete an OU:
 1. Open **Active Directory Users and Computers (ADUC)**.
 2. Go to **View** -> Enable **Advanced Features**.
    
-   ![Enable Advanced Features](images/enable_advanced_features.png)
+<img width="477" height="264" alt="image" src="https://github.com/user-attachments/assets/11b4ed54-266d-4f62-b870-8ddea59b10c7" />
 
 3. Right-click the OU -> Select **Properties** -> Open the **Object** tab.
 4. Uncheck **Protect object from accidental deletion** -> Click **OK** / **Apply**.
 
-   ![Protect Object from Accidental Deletion](images/protect_from_accidental_deletion.png)
+<img width="276" height="314" alt="image" src="https://github.com/user-attachments/assets/aac8b36d-7f5a-465d-a8d6-b20c20620489" />
 
 ### Delegation of Control
 Delegation allows Domain Admins to grant specific permissions to non-admin users or helpdesk teams over specific OUs without elevating them to full Domain Admins.
 
-![Delegate Control Menu](images/delegate_control_menu.png)
+<img width="201" height="247" alt="image" src="https://github.com/user-attachments/assets/07a96267-7b8b-4124-844a-8c6ef743546a" />
+<img width="388" height="378" alt="image" src="https://github.com/user-attachments/assets/d4b6617d-10fc-4822-8f47-a6bc6e81dbb0" />
+<img width="407" height="320" alt="image" src="https://github.com/user-attachments/assets/9c55b506-45b5-4c92-824a-8a0ecea70250" />
 
-![Delegation Select Users](images/delegation_select_users.png)
 
-![Delegation Tasks to Delegate](images/delegation_tasks_to_delegate.png)
+
 
 ### Managing Computers in AD
 Computers can be categorized into sub-OUs (e.g., `Workstations` and `Servers`) to enforce distinct group policies.
 
-![Workstations and Servers OUs](images/workstations_servers_ous.png)
+<img width="544" height="267" alt="image" src="https://github.com/user-attachments/assets/3b1f8340-1d31-4c32-9f2b-e7b7a124ea09" />
 
 ---
 
@@ -149,16 +151,18 @@ Domain Policies are set of centralized rules configured by administrators using 
 - Settings apply to the linked OU and **all nested sub-OUs**.
 - **Security Filtering:** Can scope GPOs to specific users/groups (default applies to `Authenticated Users`).
 
-![GPO Management Overview](images/gpo_management_overview.png)
+<img width="600" height="361" alt="image" src="https://github.com/user-attachments/assets/3b91ba2c-fa93-4640-a7f8-23f39ce1a4ff" />
+
 
 ### Configuring GPOs
 View settings via the **Settings** tab or right-click to **Edit** in the Group Policy Management Editor.
 
-![GPO Settings Tab](images/gpo_settings_tab.png)
+<img width="603" height="378" alt="image" src="https://github.com/user-attachments/assets/3c2d7130-f5c6-44c8-a896-fb728688817e" />
 
-![Edit GPO Context Menu](images/edit_gpo_context_menu.png)
 
-![GPO Password Policy Editor](images/gpo_password_policy_editor.png)
+<img width="419" height="378" alt="image" src="https://github.com/user-attachments/assets/88717d5c-1d1d-4f1b-9495-dc7b02f47554" />
+
+<img width="572" height="413" alt="image" src="https://github.com/user-attachments/assets/185d5f98-f689-4a14-b699-2e873b2a5903" />
 
 ### SYSVOL Share & Distribution
 GPOs are synchronized across domain machines via the **SYSVOL** share:
@@ -180,7 +184,7 @@ Default services provided by Domain Controllers:
 
 Domain credentials are stored centrally on Domain Controllers.
 
-![Kerberos Flow Overview](images/kerberos_flow_overview.png)
+<img width="544" height="342" alt="image" src="https://github.com/user-attachments/assets/1c8f1934-229e-4899-8b3d-1a91aef5a750" />
 
 ### Kerberos Authentication
 The default authentication protocol in modern Active Directory environments.
@@ -194,17 +198,18 @@ The default authentication protocol in modern Active Directory environments.
 
 #### Kerberos 6-Step Workflow:
 
-![Kerberos Request TGT](images/kerberos_request_tgt.png)
+<img width="598" height="248" alt="image" src="https://github.com/user-attachments/assets/e582d383-319e-4036-881c-67b05b816f26" />
+
 
 1. **AS-REQ:** Client sends encrypted timestamp (using user's password hash) to KDC (AS).
 2. **AS-REP:** KDC returns **TGT** (encrypted with `krbtgt` hash) and a **Session Key**.
 
-![Kerberos Request TGS](images/kerberos_request_tgs.png)
+<img width="584" height="268" alt="image" src="https://github.com/user-attachments/assets/68f92d9d-a911-4f49-9dc3-e95f140ab7a9" />
 
 3. **TGS-REQ:** Client sends TGT + requested **SPN** + encrypted timestamp (using Session Key) to KDC (TGS).
 4. **TGS-REP:** KDC returns **TGS Ticket** (encrypted with Service Owner Hash) and **Service Session Key**.
 
-![Kerberos Service Authentication](images/kerberos_service_authentication.png)
+<img width="621" height="232" alt="image" src="https://github.com/user-attachments/assets/b03b3050-6d0a-4f15-ba75-1adf69785451" />
 
 5. **AP-REQ:** Client sends TGS Ticket to target Service Server.
 6. **AP-REP / Authentication:** Target service decrypts TGS using its account hash and validates access.
@@ -214,7 +219,7 @@ The default authentication protocol in modern Active Directory environments.
 ### NetNTLM Authentication
 Legacy challenge-response authentication protocol kept for backward compatibility.
 
-![NetNTLM Challenge Response](images/netntlm_challenge_response.png)
+<img width="620" height="349" alt="image" src="https://github.com/user-attachments/assets/2d174af8-f25c-4ca3-a9d4-5461095647c7" />
 
 #### Workflow:
 1. **Auth Request:** Client sends authentication request to target server.
@@ -230,17 +235,17 @@ Legacy challenge-response authentication protocol kept for backward compatibilit
 ### Trees
 A collection of domains forming a contiguous namespace under a Parent-Child domain structure (e.g., `thm.local` -> `uk.thm.local`).
 
-![AD Tree Structure](images/ad_tree_structure.png)
+<img width="671" height="504" alt="image" src="https://github.com/user-attachments/assets/3dacba56-3a80-468c-8910-443ba5057557" />
 
 ### Forests
 A collection of one or more AD trees sharing a common Schema, Global Catalog, and Domain Services. Forms the top-level security boundary.
 
-![AD Forest Structure](images/ad_forest_structure.png)
+<img width="622" height="249" alt="image" src="https://github.com/user-attachments/assets/a8ea87a3-e973-4b56-b821-44441b6ee966" />
 
 ### Trust Relationships
 Allows users in one domain/forest to access resources in another.
 
-![AD Trust Relationships](images/ad_trust_relationships.png)
+<img width="665" height="287" alt="image" src="https://github.com/user-attachments/assets/75890740-08a8-4330-805b-fe52a0dd75d2" />
 
 - **One-Way Trust:** Domain A trusts Domain B (Users in B can access resources in A).
 - **Two-Way Trust:** Mutual trust between domains.
@@ -268,7 +273,7 @@ Allows users in one domain/forest to access resources in another.
 
 **Azure AD (Entra ID)** serves as Microsoft's cloud identity solution, bridging physical on-premise AD with cloud services via **Azure AD Connect**.
 
-![Azure AD Overview](images/azure_ad_overview.png)
+<img width="618" height="324" alt="image" src="https://github.com/user-attachments/assets/8f096a79-3159-485b-8382-d6db8301f12a" />
 
 ### On-Premise AD vs. Azure AD Comparison
 | Feature / Service | On-Premise Windows Server AD | Azure Active Directory (Cloud) |
