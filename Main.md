@@ -57,9 +57,9 @@ Welcome to my hands-on Cybersecurity Knowledge Base and Lab Notes! This reposito
 ---
 
 ### 🏰 05. Active Directory Overview
-- [ ] Active Directory Architecture & Fundamentals
-- [ ] Physical Active Directory Components (Domain Controller, NTDS.dit)
-- [ ] Logical Active Directory Components (Forests, Trees, Domains, OUs)
+- [x] Active Directory Architecture & Fundamentals
+- [x] Physical Active Directory Components (Domain Controller, NTDS.dit)
+- [x] Logical Active Directory Components (Forests, Trees, Domains, OUs)
 
 ---
 
